@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wyh.background_management.dao.SysUserAuthsDao">
+
+    <resultMap id="UserAuthsResultMap" type="com.wyh.background_management.pojo.SysUserAuths" >
+        <result column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="identity_type" property="identityType" />
+        <result column="identity_display" property="identityDisplay" />
+        <result column="identifier" property="identifier" />
+        <result column="credential" property="credential" />
+        <result column="auth_img" property="authImg" />
+        <result column="nickname" property="nickname" />
+        <result column="gender" property="gender"/>
+    </resultMap>
+
+    <select id="findUserAuthsByIdentityTypeAndOpenIdCredential" resultMap="UserAuthsResultMap">
+        select id, user_id,identity_type,identity_display,identifier,credential,auth_img,nickname,gender from sys_user_auths where identity_type=#{identityType} and identifier = 'openid' and credential=#{credential} and is_delete = 0
+    </select>
+
+    <insert id="insertNewSysUserAuths">
+        insert into sys_user_auths
+        (user_id, identity_type, identity_display, identifier, credential, auth_img, nickname, gender)
+        values
+        (#{userId}, #{identityType}, #{identityDisplay}, #{identifier}, #{credential}, #{authImg}, #{nickname}, #{gender})
+    </insert>
+
+</mapper>

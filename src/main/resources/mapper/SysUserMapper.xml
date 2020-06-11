@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wyh.background_management.dao.SysUserDao">
+    <resultMap id="BaseResultMap" type="com.wyh.background_management.pojo.SysUser" >
+        <result column="user_id" property="userId" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+    </resultMap>
+    <select id="findById" resultMap="BaseResultMap">
+        select user_id,username,password from sys_user where user_id = #{id} and is_delete = 0
+    </select>
+
+    <select id="findByUsername" resultMap="BaseResultMap">
+        select user_id,username,password from sys_user where username = #{username} and is_delete = 0
+    </select>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        select user_id,username,password from sys_user and is_delete = 0
+    </select>
+
+    <insert id="insertNewUser" useGeneratedKeys="true" keyProperty="userId">
+        insert into sys_user(username, password)values(#{username}, #{password})
+    </insert>
+</mapper>
