@@ -26,7 +26,7 @@ import java.util.*;
 @Service
 public class JwtUserDetailsService implements UserDetailsService {
 
-    @Value("${spring.redis.timeout}")
+    @Value("${redis.timeout}")
     private String timeout;
 
     @Resource
