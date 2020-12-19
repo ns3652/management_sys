@@ -50,7 +50,7 @@
                 </view>
                 <view class="item-right">
                     <view class="item-right-title">我的地址</view>
-                    <view class="item-right-subtitle">楼名-楼层-科室-床位</view>
+                    <view class="item-right-subtitle">楼名-楼层-房间号</view>
                     <image class="item-right-image" src="../../assets/images/right-arrow.png" />
                 </view>
             </view>
@@ -73,7 +73,7 @@
                 </view>
                 <view class="item-right">
                     <view class="item-right-title">我的账号</view>
-                    <view class="item-right-subtitle">XCX200312000001</view>
+                    <view class="item-right-subtitle">干饭001</view>
                     <image class="item-right-image" src="../../assets/images/right-arrow.png" />
                 </view>
             </navigator>

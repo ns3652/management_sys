@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1074a9ab-b48b-4f9e-9499-0dbf0ab20012" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/weChat/order-meal-app-master/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/weChat/order-meal-app-master/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/weChat/order-meal-app-master/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/weChat/order-meal-app-master/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/weChat/order-meal-app-master/pages/login/login.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/weChat/order-meal-app-master/pages/login/login.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/weChat/order-meal-app-master/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/weChat/order-meal-app-master/project.config.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -173,6 +177,33 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="background_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="management_sys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="order-meal-app-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="background_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="management_sys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="order-meal-app-master" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="background_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="management_sys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="order-meal-app-master" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -183,7 +214,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608349170802" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608350533231" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -225,12 +256,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608265340057</updated>
-      <workItem from="1608265343171" duration="2184000" />
+      <workItem from="1608265343171" duration="2562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2184000" />
+    <option name="totallyTimeSpent" value="2562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="6" />
