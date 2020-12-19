@@ -1,4 +1,4 @@
-<!-- <view>
+<view>
     <image class="banner" src="../../assets/images/home-banner.png"></image>
 </view>
 <view class="wraper">
@@ -8,7 +8,7 @@
         <view class="memo">{{restaurantInfo.memo}}</view>
         <image class="swiper" src="{{restaurantInfo.image}}"></image>
         <view class="welcome">
-            <view class="welcome-text">欢迎张三 , 祝您用餐愉快 !</view>
+            <view class="welcome-text">欢迎亲爱的干饭人, 祝您用餐愉快 !</view>
             <view class="welcome-btn" bindtap="_handlerOrderClick">立即订餐</view>
         </view>
     </view>
@@ -36,4 +36,4 @@
             <view class="content2-sub-memo">{{restaurantInfo.address}}</view>
         </view>
     </view>
-</view> -->
+</view>

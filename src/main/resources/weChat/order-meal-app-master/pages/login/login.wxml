@@ -3,7 +3,7 @@
     <image class="gaoshi-beidi"  src="../../assets/images/login-bg.png"></image>
     
     <view class="content">
-        <view class="title">订餐服务平台</view>
+        <view class="title">909干饭服务平台</view>
         <view class="input-view">
             <input class="input account" placeholder="请输入登录账号" placeholder-class="placeholder" bindinput ="usernameInput" />
         </view>
