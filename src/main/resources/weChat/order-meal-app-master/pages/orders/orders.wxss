@@ -1,0 +1,164 @@
+page{
+    font-size: 30rpx;
+    color: #303133;
+    background-color: #F2F3F4;
+}
+
+.header{
+    height: 90rpx;
+    font-size: 26rpx;
+    background-color: #fff;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70rpx;
+    background-color: #F2F3F4;
+    border-radius: 35rpx;
+    margin: 0 20rpx;
+    padding: 0 30rpx;
+}
+
+.search-title{
+    flex: 1;
+    color: #C0C4CC;
+}
+
+.search-image{
+    width: 60rpx;
+    border-left: 1px solid #DCDFE6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+}
+
+.search-image-ico{
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.order{
+    margin: 20rpx 0;
+    background-color: #fff;
+}
+
+.order-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80rpx;
+    margin: 0 20rpx;
+    border-bottom: 1px dashed #F2F3F4;
+    box-sizing: border-box;
+}
+
+.order-header-num{
+    flex: 1;
+}
+
+.order-header-status{ 
+    width: 100rpx; 
+    font-size: 28rpx;
+    text-align: right;
+    line-height: 40rpx;
+}
+
+/* 已完成 */
+.status0{
+    color: #2BD28A;
+}
+/* 待送餐 */
+.status1{
+    color: #409EFF;
+}
+
+.order-content{
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    font-size: 28rpx; 
+    height: 80rpx;
+    line-height: 80rpx;
+    color: #909399;
+}
+
+.order-content-info{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtotal{
+    color: #303133;
+    font-size: 30rpx;
+}
+
+.order-refund{
+    font-size: 26rpx;
+    border-top: 1px solid #F2F3F4;
+    box-sizing: border-box;
+    padding: 0 20rpx;
+}
+
+.refund-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28rpx;
+    height: 60rpx;
+    color: #FD720A;
+}
+
+.refund-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60rpx;
+    margin-bottom: 10rpx;
+    color: #909399;
+    border-top: 1px dashed #F2F3F4;
+    box-sizing: border-box;
+}
+
+.refund-num{
+    width: 270rpx;
+}
+
+.refund-time{
+    width: 290rpx;
+}
+
+.refund-subtotal{
+    flex: 1;
+    text-align: right;
+}
+
+.order-footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80rpx;
+    border-top: 1px solid #F2F3F4;
+    box-sizing: border-box;
+    font-size: 26rpx;
+    color: #606266;
+}
+
+.order-footer-modify{
+    border: 1px solid #409EFF;
+    box-sizing: border-box;
+    border-radius: 30rpx;
+    padding: 5rpx 20rpx;
+    color: #409EFF;
+}
+
+.order-footer-detail{
+    border: 1px solid #C0C4CC;
+    box-sizing: border-box;
+    border-radius: 30rpx;
+    padding: 5rpx 20rpx;
+    margin: 0 20rpx 0 40rpx;
+    color: #909399;
+}
+

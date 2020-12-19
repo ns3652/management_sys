@@ -1,0 +1,22 @@
+<view> 
+    <block wx:for="{{items}}" wx:key="index" item="{{item}}">
+        <view class="item-group">
+            <view class="item-thumbnail">
+                <image class="thumbnail" src="{{item.imagePath}}"></image>
+            </view>
+            <view class="item-info">
+                <view class="item-title">
+                    {{item.name}}
+                </view>
+                <view class="item-price">
+                    {{item.price}}元
+                </view>
+                <view class="item-other">
+                    <view id="{{index}}" data-item="{{item}}" class="btn" bindtap="_handlerMinusCount" hidden="{{item.count == 0 ? true : false}}" >-</view>
+                    <view class="item-count" hidden="{{item.count == 0 ? true : false}}">{{item.count}}</view>
+                    <view id="{{index}}" data-item="{{item}}" class="btn" bind:tap="_handlerAddCount">+</view>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

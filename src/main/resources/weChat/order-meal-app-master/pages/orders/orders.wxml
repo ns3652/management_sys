@@ -1,0 +1,45 @@
+<view>
+    <!-- <view class="header">
+        <navigator class="search" url="../order-search/order-search">
+            <view class="search-title">输入订单号搜索</view>
+            <view class="search-image">
+                <image class="search-image-ico" src="../../assets/images/search.png" />
+            </view>
+        </navigator>
+    </view> -->
+
+    <view class="order" wx:for='{{orderList}}' wx:key="orderNumber">
+        <!-- 主订单头部 -->
+        <!-- <view class="order-header">
+            <view class="order-header-num">订单号：{{item.orderNumber}}</view>
+            <view class="order-header-status {{item.orderStatus == '已完成' ? 'status0' : 'status1'}}">
+                {{item.orderStatus}}
+            </view>
+        </view> -->
+        <!-- 主订单信息 -->
+        <!-- <view class="order-content">
+            <view class="order-content-info">
+                <view class="order-time">{{item.orderTime}}</view>
+                <view class="payment-type">{{item.paymentType}}</view>
+                <view class="subtotal">¥{{item.orderTotal}}</view>
+            </view>
+        </view> -->
+        <!-- 主订单中的退单 -->
+        <!-- <view class="order-refund" hidden="{{item.refundTotal == 0}}">
+            <view class="refund-header">
+                <view class="refund-header-title">退单信息</view>
+                <view class="refund-header-total">¥-{{item.refundTotal}}</view>
+            </view>
+            <view class="refund-content" wx:for='{{item.refundList}}' wx:for-item='refundList' wx:key='refundNumber'>
+                <view class="refund-num">{{refundList.refundNumber}}</view>
+                <view class="refund-time">{{refundList.refundTime}}</view>
+                <view class="refund-subtotal">¥-{{refundList.refundSubtotal}}</view>
+            </view>
+        </view> -->
+        <!-- 底部按钮区 -->
+        <!-- <view class="order-footer">
+            <navigator class="order-footer-modify" hidden="{{item.orderStatus == '已完成'}}" url="../order-modify/order-modify">修改订单</navigator>
+            <navigator class="order-footer-detail" url="../order-detail/order-detail">查看详情</navigator>
+        </view> -->
+    </view>
+</view>

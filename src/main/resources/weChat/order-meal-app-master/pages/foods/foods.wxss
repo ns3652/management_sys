@@ -1,0 +1,267 @@
+.main-top{
+  font-size: 28rpx;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #F2F3F4;
+  padding: 5rpx 0 15rpx;
+  margin-bottom: 2px;
+}
+
+.item-picker{
+  margin-left: 20rpx;
+  padding: 15rpx 20rpx;
+  color: #303133;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 30rpx;
+}
+
+.scroll_left {
+    width: 180rpx;
+}
+
+.scroll_left_text {
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    color: #606266;
+    background-color: #F2F3F4;
+}
+
+.scroll_left_text_active {
+    color: #303133;
+    background-color: white;
+    border-left: 10rpx solid #2BD28A;
+}
+
+.scroll_right {
+    flex: 1;
+}
+
+.scroll_right_top {
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    color: #606266;
+    background-color: #F2F3F4;
+    padding-left: 20rpx;
+}
+
+.scroll_right_view {  
+    font-size: 30rpx;  
+    height: 180rpx;
+    padding: 15rpx 20rpx 15rpx;
+    /* border-bottom: 1px dashed lightgray; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right_view_image image{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 10rpx;
+}
+
+.right_view_info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10rpx 0 10rpx;
+    box-sizing: border-box;
+}
+
+.right_view_other{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.other_tag{
+    position: absolute;
+    left: 180rpx;
+    height: 35rpx;
+    line-height: 35rpx;
+    font-size: 24rpx;
+    color: #C9CACB;
+    background-color: #F8F9FA;
+    padding: 8rpx 20rpx;
+    margin-right: 10rpx;
+    border-radius: 30rpx;
+}
+
+.current_price{
+    color: #2BD28A;
+}
+
+.original_price{
+    margin-left: 10rpx;
+    font-size: 24rpx;
+    text-decoration:line-through;
+    color: #8a8a8a;
+}
+
+.discount{
+    margin-left: 10rpx;
+    font-size: 24rpx;
+    color: #2BD28A;
+}
+
+.other_button_group {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    width: 50rpx;
+    height: 50rpx;
+    line-height: 46rpx;
+    text-align: center;
+    font-size: 40rpx;
+    color: white;
+    background-color: #2BD28A;   
+    border-radius: 50%;
+}
+
+.num {
+    width: 50rpx;
+    height: 50rpx;
+    font-size: 32rpx;
+    line-height: 50rpx;
+    text-align: center;
+}
+
+/* 购物车 */
+/* 购物车底部栏 */
+.cat {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+
+/* 购物车图片容器 */
+.cat_img_view {
+    position: absolute;
+    width: 80rpx;
+    height: 80rpx;
+    top: 10rpx;
+    left: 20rpx;
+    border-radius: 50%;
+    background-color: #2BD28A;
+    display: flex;
+    justify-content: center;
+    align-items: Center;
+}
+/* 购物车图片 */
+.cat_img {
+    width: 50rpx;
+    height: 50rpx;
+}
+/* 购物车右上角标 */
+.cat_num {
+    position: absolute;
+    width: 40rpx;
+    height: 40rpx;
+    top: -5rpx;
+    right: -20rpx;
+    background-color: #FD720A;
+    padding: 2.5rpx;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: Center;
+    color: white;
+    font-size: 28rpx;
+}
+
+.total-text{
+    width: 400rpx;
+    position: absolute;
+    left: 130rpx;
+    text-align: center;
+    font-size: 30rpx;
+    color: #606266;
+}
+
+/* 底部按钮 */
+.cat_text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 180rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background-color: #2BD28A;
+    font-size: 32rpx;
+    color: white;
+}
+
+/* 购物车列表相关样式 */
+/* 弹出购物车的遮罩层 */
+.cat_bottom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 90rpx;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9;
+}
+/* 购物车列表 */
+.cat_bottom1 {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 90rpx;
+    background-color: white;
+    min-height: 210rpx;
+    z-index: 9;
+}
+/* 购物车列表标题栏样式 */
+.cat_bottom1_view {
+    display: flex;
+    justify-content: space-between;
+    align-items: Center;
+    height: 80rpx;
+    font-size: 28rpx;
+    background-color: rgba(240, 240, 240, 1);
+    border-bottom: 1rpx solid rgba(170, 170, 170, 0.5);
+}
+/* 购物车列表滚动栏 */
+.cat_scroll {
+    min-height: 80rpx;
+    max-height: 65vh;
+    padding-bottom: 50rpx;
+    overflow: scroll;
+}
+/* 购物车列表项 */
+.cat_scrollView {
+    display: flex;
+    justify-content: space-between;
+    align-items: Center;
+    padding: 15rpx 0;
+    border-bottom: 1px solid #F0F0F0;
+}
+/* 购物车列表项中的商品名称 */
+.cat_scrollView_text {
+    margin-left: 20rpx;
+    font-size: 30rpx;
+}
+/* 购物车列表项中的按钮组 */
+.cat_scrollView_view {
+    margin-right: 30rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: Center;
+}

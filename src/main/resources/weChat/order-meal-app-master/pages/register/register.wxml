@@ -1,0 +1,37 @@
+<view class="wraper">
+    <form>
+        <view class="container">
+            <!-- <view class="header">基本信息</view> -->
+            <view class="row bbl-1">
+                <text class="row-text">登录账号</text>
+                <input class="row-input" name="userAccount" placeholder="请输入登录账号" placeholder-class="placeholder-class" bindinput ="usernameInput"/>
+            </view>
+            
+            <view class="row bbl-1">
+                <text class="row-text">登录密码</text>
+                <input class="row-input" name="password1" placeholder="请输入登录密码" placeholder-class="placeholder-class" bindinput ="passwordInput" type="{{type1}}"/>
+                <image class="row-image" src="../../assets/images/no-password-gray.png" /> 
+            </view>
+            <view class="row">
+                <text class="row-text">确认密码</text>
+                <input class="row-input" name="password2" placeholder="请输入确认密码" placeholder-class="placeholder-class" bindinput ="passwordInput2" type="{{type2}}"/>
+                <image class="row-image" src="../../assets/images/no-password-gray.png" /> 
+            </view>
+        </view>
+        <view class="container">
+            <view class="row bbl-1">
+                <text class="row-text" space="ensp">手 机 号</text>
+                <input class="row-input" name="validatePhone" placeholder="请输入手机号码" placeholder-class="placeholder-class" />
+            </view>
+            <view class="row">
+                <text class="row-text" space="ensp">验 证 码</text>
+                <input class="row-input" name="validateCode" placeholder="请输入短信验证码" placeholder-class="placeholder-class" />
+                <view class="btn-validate">获取验证码</view>
+            </view>
+        </view>
+        <view class="btn-group">
+            <view class="btn-ok" bindtap="_handlerClick">确认注册</view>
+        </view>
+        
+    </form>
+</view>

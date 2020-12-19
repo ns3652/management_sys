@@ -1,0 +1,86 @@
+<!-- <view class="main-top">
+    <picker bindchange="bindDateChange" value="{{dateIndex}}" range="{{dateArray}}">
+        <view class="item-picker">
+            预订日期：{{dateArray[dateIndex]}}
+        </view>
+    </picker>
+
+    <picker bindchange="bindMealChange" value="{{mealIndex}}" range="{{mealArray}}">
+        <view class="item-picker">
+            预订餐次：{{mealArray[mealIndex]}}
+        </view>
+    </picker>
+</view> -->
+<!-- 左右联动 -->
+<view class='container'>
+    <!-- 左 -->
+    <!-- <scroll-view class='scroll_left' scroll-with-animation scroll-y style="height:{{windowHeight}}px" scroll-top="{{leftToTop}}">
+        <view class="scroll_left_text" wx:for="{{constants}}" wx:key="id" bindtap="left" data-id="{{item.id}}" class='scroll_left_text {{item.id === currentLeftSelect ?"scroll_left_text_active":""}}'>
+            <view id="{{item.id}}">
+                {{item.name}}
+            </view>
+        </view>
+    </scroll-view> -->
+
+    <!-- 右 -->
+    <!-- <scroll-view class='scroll_right' scroll-with-animation scroll-y style="height:{{windowHeight}}px" bindscroll="right" scroll-into-view="{{HZL_toView}}">
+        <view wx:for="{{constants}}" wx:for-index='parentIndex' wx:key="id" id="{{item.id}}">
+            <view class="scroll_right_top">{{item.name}}</view>
+            <view class="scroll_right_view" wx:for="{{item.category}}" wx:key="category_id">
+                <view class="right_view_image">
+                    <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1405304736,1966318522&fm=26&gp=0.jpg"></image>
+                </view>
+                <view class="right_view_info">
+                    <view>{{item.category_name}}</view>
+                    <view>
+                        <text class="current_price">￥{{item.current_price}}</text>
+                        <text class="original_price" hidden="{{!item.original_price || item.original_price == item.current_price}}">￥{{item.original_price}}</text>
+                        <text class="discount" hidden="{{!item.discount || item.discount >= 10 }}">{{item.discount}}折</text>
+                    </view>
+                    <view class="right_view_other">
+                        <view class="other_tag" hidden="{{!item.tastes || item.tastes == ''}}">{{item.tastes}}</view>
+                        <view class='other_button_group'>
+                            <view wx:if='{{item.num > 0}}' class='button' bindtap='HZL_jian' data-parentIndex='{{parentIndex}}' data-index='{{index}}'>-</view>
+                            <view wx:if='{{item.num > 0}}' class='num'>{{item.num}}</view>
+                            <view class='button' bindtap='HZL_jia' data-parentIndex='{{parentIndex}}' data-index='{{index}}'>+</view>
+                        </view>
+                    </view>
+
+                </view>
+            </view>
+        </view>
+    </scroll-view> -->
+</view>
+
+
+<!-- 下面的购物车 -->
+<!-- 购物车弹出的遮罩层 -->
+<view wx:if='{{isCat > 0}}' class='cat_bottom' bindtap='isCat_close'></view>
+<!-- 购物车列表 -->
+<!-- <view wx:if='{{isCat > 0}}' class='cat_bottom1'>
+    <view class='cat_bottom1_view'>
+        <view style='margin-left: 30rpx;'>购物车</view>
+        <view style='margin-right: 30rpx;' bindtap='HZL_zero'>清空</view>
+    </view>
+    <scroll-view class='cat_scroll' scroll-y='true'>
+        <view class='cat_scrollView' wx:for='{{my_cat}}' wx:key='my_cat'>
+            <view class='cat_scrollView_text'>{{item.name}}</view>
+            <view class='cat_scrollView_view'>
+                <view wx:if='{{item.num > 0}}' class='button' bindtap='reduceCount' data-parentIndex='{{item.parentIndex}}' data-index='{{item.index}}'>-</view>
+                <view wx:if='{{item.num > 0}}' class='num'>{{item.num}}</view>
+                <view class='button' bindtap='addCount' data-parentIndex='{{item.parentIndex}}' data-index='{{item.index}}'>+</view>
+            </view>
+        </view>
+    </scroll-view>
+</view> -->
+
+
+<!-- 购物车 -->
+<!-- <view class='cat'>
+    <view class='cat_img_view' bindtap='isCat'>
+        <image src='../../assets/images/shop-cat-on1.png' class='cat_img'></image>
+        <view class='cat_num' wx:if='{{HZL_num > 0}}'>{{HZL_num}}</view>
+    </view>
+    <view class="total-text">合计：¥99.99</view>
+    <navigator class='cat_text' url="../order-confirm/order-confirm">选好了</navigator>
+</view> -->

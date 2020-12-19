@@ -1,0 +1,14 @@
+.item-info{
+    font-size: 32rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background-color: #F3F3F3;
+    border: 1px dashed #ccc;
+    border-top: none;  
+}
+
+.item-group .active{
+  border-left: 10rpx solid #FF6259;
+  font-weight: bold;
+}

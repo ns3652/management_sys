@@ -1,0 +1,9 @@
+<form bindsubmit="bindFormSubmit">
+    <view class="content">
+        <textarea placeholder="请填写您的宝贵意见或建议，我们将努力改进（不少于五个字）" name="textarea" />
+    </view>   
+    <input placeholder="请留下手机号码，以便我们回复您" name="input" />
+    <view class="btn-group">
+        <view class="btn-ok" form-type="submit">提交</view>
+    </view>
+</form>

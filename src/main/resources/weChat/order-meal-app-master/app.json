@@ -1,0 +1,54 @@
+{
+    "pages": [
+        "pages/login/login",
+        "pages/index/index",
+        "pages/news/news",
+        "pages/foods/foods",
+        "pages/orders/orders",
+        "pages/personal-center/personal-center"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "订餐服务平台",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#8a8a8a",
+        "selectedColor": "#2DD089",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/assets/images/home_0.png",
+                "selectedIconPath": "/assets/images/home_1.png"
+            },
+            {
+                "pagePath": "pages/news/news",
+                "text": "宣教",
+                "iconPath": "/assets/images/news_0.png",
+                "selectedIconPath": "/assets/images/news_1.png"
+            },
+            {
+                "pagePath": "pages/foods/foods",
+                "text": "订餐",
+                "iconPath": "/assets/images/food_0.png",
+                "selectedIconPath": "/assets/images/food_1.png"
+            },
+            {
+                "pagePath": "pages/orders/orders",
+                "text": "订单",
+                "iconPath": "/assets/images/orders_0.png",
+                "selectedIconPath": "/assets/images/orders_1.png"
+            },
+            {
+                "pagePath": "pages/personal-center/personal-center",
+                "text": "我的",
+                "iconPath": "/assets/images/person_0.png",
+                "selectedIconPath": "/assets/images/person_1.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

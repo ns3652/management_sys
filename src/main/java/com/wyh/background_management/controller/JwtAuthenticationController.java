@@ -70,8 +70,8 @@ public class JwtAuthenticationController {
     *
     * */
     @PostMapping("/weChatLogin")
-    public JSONObject weChatLogin(WeChatLoginRequest weChatLoginRequest) throws Exception {
-        return thirdPartyService.weChatLogin(weChatLoginRequest);
+    public JSONObject weChatLogin(String jscode, String nickName, String avatarUrl, int gender, String language, String country, String province, String city) throws Exception {
+        return thirdPartyService.weChatLogin(new WeChatLoginRequest(jscode, nickName, avatarUrl, gender, language, country, province, city));
     }
 
 

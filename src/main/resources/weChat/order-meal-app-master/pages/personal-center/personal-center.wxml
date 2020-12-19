@@ -1,0 +1,106 @@
+<view class="wraper">
+    <image class="bg" src="../../assets/images/person_bg.png"></image>
+    <view class="header">
+        <view class="header-person">
+            <view class="header-person-logo">
+                <image class="header-person-image" src="{{info.avatarUrl!=null?info.avatarUrl:'../../assets/images/personal-ico.png'}}" />
+            </view>
+            <view class="header-person-name">{{info.nickName}}</view>
+        </view>
+
+        
+
+        <view class="header-phone-group">
+            <view class="header-phone-info">
+                <view class="header-phone-title">手机号</view>
+                <view class="phone-number">*********</view>
+            </view>
+            <view>
+                <view class="modify-phone-number">修改手机号</view>
+            </view>
+        </view>
+    </view>
+
+    <view>
+        <navigator class="item" url="../bills/bills">
+            <view class="item-left">
+                <image class="item-left-image" src="../../assets/images/bill.png" />
+            </view>
+            <view class="item-right">
+                <view class="item-right-title">我的账单</view>
+                <image class="item-right-image" src="../../assets/images/right-arrow.png" />
+            </view>
+        </navigator>
+
+        <navigator class="item" url="../inside-card/inside-card">
+            <view class="item-left">
+                <image class="item-left-image" src="../../assets/images/card.png" />
+            </view>
+            <view class="item-right">
+                <view class="item-right-title">我的餐卡</view>
+                <view class="item-right-subtitle">未绑定餐卡</view>
+                <image class="item-right-image" src="../../assets/images/right-arrow.png" />
+            </view>
+        </navigator>
+
+        <navigator url="../address/address">
+            <view class="item">
+                <view class="item-left">
+                    <image class="item-left-image" src="../../assets/images/address.png" />
+                </view>
+                <view class="item-right">
+                    <view class="item-right-title">我的地址</view>
+                    <view class="item-right-subtitle">楼名-楼层-科室-床位</view>
+                    <image class="item-right-image" src="../../assets/images/right-arrow.png" />
+                </view>
+            </view>
+        </navigator>
+
+        <view class="item-group ">
+            <navigator class="item mt-0" url="../change-password/change-password">
+                <view class="item-left">
+                    <image class="item-left-image" src="../../assets/images/modify-password.png" />
+                </view>
+                <view class="item-right bottom_line">
+                    <view class="item-right-title">修改密码</view>
+                    <image class="item-right-image" src="../../assets/images/right-arrow.png" />
+                </view>
+            </navigator>
+
+            <navigator class="item mt-0" url="../account/account">
+                <view class="item-left">
+                    <image class="item-left-image" src="../../assets/images/my.png" />
+                </view>
+                <view class="item-right">
+                    <view class="item-right-title">我的账号</view>
+                    <view class="item-right-subtitle">XCX200312000001</view>
+                    <image class="item-right-image" src="../../assets/images/right-arrow.png" />
+                </view>
+            </navigator>
+        </view>
+
+        <view class="item-group">
+            <navigator class="item mt-0" url="../feedback/feedback">
+                <view class="item-left">
+                    <image class="item-left-image" src="../../assets/images/feedback.png" />
+                </view>
+                <view class="item-right bottom_line">
+                    <view class="item-right-title">意见反馈</view>
+                    <image class="item-right-image" src="../../assets/images/right-arrow.png" />
+                </view>
+            </navigator>
+
+            <navigator class="item mt-0" url="../help/help">
+                <view class="item-left">
+                    <image class="item-left-image" src="../../assets/images/problem.png" />
+                </view>
+                <view class="item-right">
+                    <view class="item-right-title">常见问题</view>
+                    <image class="item-right-image" src="../../assets/images/right-arrow.png" />
+                </view>
+            </navigator>
+        </view>
+
+        <view class="btn-exit" bindtap='returnLogin'>退出当前账号</view>
+    </view>
+</view>

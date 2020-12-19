@@ -1,0 +1,7 @@
+<view class="item-group">
+  <block wx:for="{{items}}" wx:key="index">
+    <view id="{{index}}" class="item-info {{currentIndex == index ? 'active' : ''}}" data-item="{{item}}" bind:tap="_handlerTap">
+      {{item.name}}
+    </view>
+  </block>
+</view>

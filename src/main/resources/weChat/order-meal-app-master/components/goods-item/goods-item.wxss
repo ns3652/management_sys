@@ -1,0 +1,75 @@
+.item-group{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10rpx; 
+    margin-bottom: 20rpx;
+    border-bottom: 1px dashed #ccc;
+    box-sizing: border-box;  
+}
+
+.item-group:last-of-type{
+    border: none;
+}
+
+.thumbnail{
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 10rpx;
+}
+
+.item-info{
+    flex: 1;
+    margin-left: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-title{
+    font-size: 32rpx;
+    margin-bottom: 10rpx;
+}
+
+.item-price{
+    font-size: 36rpx;
+    font-weight: bold;
+    color: #FF6259;
+}
+
+.item-other{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 36rpx;
+    color: #8a8a8a;
+    height: 60rpx;
+    margin-bottom: 10rpx;
+}
+
+.btn{
+    width: 60rpx;
+    line-height: 50rpx;
+    text-align: center;
+    font-size: 50rpx;
+    font-weight: bold;
+    color: white;
+    background-color: #FF6259;
+    border-radius: 50%;
+}
+
+/* .btn-subtract{    
+    border-radius: 8rpx 0 0 8rpx;
+}
+
+.btn-add{
+    border-radius: 0 8rpx 8rpx 0;
+} */
+
+.item-count{
+    width: 100rpx;
+    line-height: 60rpx;
+    text-align: center;
+    font-weight: bold;
+    color: #080808;
+    /* border-top: 1px solid #FF6259;
+    border-bottom: 1px solid #FF6259; */
+}

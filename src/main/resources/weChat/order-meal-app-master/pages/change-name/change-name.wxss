@@ -1,0 +1,30 @@
+page{
+    background-color: #F2F3F4;
+    font-size: 32rpx;
+    color: #303133;
+}
+
+.content{
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nickname{
+    width: 100%;
+    height: 100rpx;
+    text-align: center;
+    background-color: #fff;
+}
+
+.content .btn-save{
+    width: 90%;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    margin-top: 40rpx;
+    color: #fff;
+    background-color: #2DD089;
+    border-radius: 50rpx;
+}

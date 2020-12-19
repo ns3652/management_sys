@@ -1,0 +1,54 @@
+<view class="warper">
+    <!-- <image class="gaoshi-beidi" src="../../assets/images/login-bg1.png"></image> -->
+    <image class="gaoshi-beidi"  src="../../assets/images/login-bg.png"></image>
+    
+    <view class="content">
+        <view class="title">订餐服务平台</view>
+        <view class="input-view">
+            <input class="input account" placeholder="请输入登录账号" placeholder-class="placeholder" bindinput ="usernameInput" />
+        </view>
+
+        <view class="input-view">
+            <input class="input password" placeholder="请输入登录密码" placeholder-class="placeholder" bindinput ="passwordInput" type="{{type}}"/>
+            <image class="password-image" src="../../assets/images/no-password-gray.png" />
+        </view>
+
+        <view class="button-view">
+            <button class="button-ok" bindtap="_handlerClick">登 录</button>
+        </view>
+
+
+        <view class="other">
+            <navigator url="../forgot-password/forgot-password">
+                <view class="other-password">忘记密码</view>
+            </navigator>
+
+            <navigator url="../register/register">
+                <view class="other-reg">用户注册</view>
+            </navigator>
+        </view>
+        <view class="third-party">
+            <view class="third-party-pic">第三方登录 
+               <image style="width:25px;height:25px" src="../../assets/images/Wechat.jpg" bindtap="thirdPartyLogin"></image> 
+            </view> 
+        </view>
+        
+    </view>
+    
+    <!-- <view class="container">
+        <view class="userinfo">
+            <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 微信授权 </button>
+        </view>
+    </view> -->
+    <view class='dialog-container' hidden="{{hasUserInfo}}">
+        <!-- <text>{{hasUserInfo}}</text> -->
+        <view class='dialog-mask'></view>
+        <view class='dialog-info'>
+            <view class='dialog-title'>登陆提示</view>
+            <view class='dialog-content'>为了您能有更好的体验，请点击授权?</view>
+            <view class='dialog-footer'>
+                <button class='dialog-btn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权 </button>
+            </view>
+        </view>
+    </view>
+</view>

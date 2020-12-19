@@ -1,0 +1,4 @@
+<view class="content">
+    <input class="nickname" name="nickname" value="张六六" placeholder="请输入姓名" />
+    <view class="btn-save">确认修改</view>
+</view>

@@ -1,0 +1,16 @@
+<view>
+    <radio-group class="radio-group">
+        <view class="radio-item">
+            <text class="radio-text">男</text>
+            <radio class="radio" value="0" checked="{{true}}" />
+        </view>
+        <view class="radio-item">
+            <text class="radio-text">女</text>
+            <radio class="radio" value="1" checked="{{false}}" />
+        </view>
+    </radio-group>
+
+    <view class="btn-group">
+        <view class="btn-ok">确认修改</view>
+    </view>
+</view>

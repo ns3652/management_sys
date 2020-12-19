@@ -1,0 +1,133 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"coverView": true,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"useCompilerModule": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.3",
+	"appid": "wx13a0c0f4f6c291e1",
+	"projectname": "order-meal-app",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "news",
+					"pathName": "pages/news/news",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "personal-center",
+					"pathName": "pages/personal-center/personal-center",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "bind-card",
+					"pathName": "pages/bind-card/bind-card",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "orders",
+					"pathName": "pages/orders/orders",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "feedback",
+					"pathName": "pages/feedback/feedback",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "order-confirm",
+					"pathName": "pages/order-confirm/order-confirm",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "foods",
+					"pathName": "pages/foods/foods",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "inside-card",
+					"pathName": "pages/inside-card/inside-card",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "bill-detail",
+					"pathName": "pages/bill-detail/bill-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "order-modify",
+					"pathName": "pages/order-modify/order-modify",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

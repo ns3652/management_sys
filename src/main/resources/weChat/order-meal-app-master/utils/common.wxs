@@ -1,0 +1,13 @@
+var filters = {
+    toFix: function (val) {
+        if (typeof (val) == 'undefined') {
+            return val
+        } else {
+            return val.toFixed(2);
+        }    
+    }
+}
+
+module.exports = {
+    toFix: filters.toFix
+}
